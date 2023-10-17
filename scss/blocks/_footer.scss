@@ -1,0 +1,51 @@
+@use "../mixins" as m;
+.line {
+  color: #d9dbe9;
+}
+.site-footer {
+  padding: 56px;
+}
+.site-footer__wrapper {
+  @include m.flexbox(space-between,center);
+}
+.site-logo {
+  margin-bottom: 18px;
+}
+.site-footer__desc {
+  margin: 0;
+  font-weight: var(--normal);
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--main-neutral-gray-color);
+}
+.site-footer__form {
+  @include m.flexbox(space-between,center);
+  max-width: 507px;
+  width: 100%;
+  padding: 12px 17px 12px 31px;
+  border: 1px solid #eff0f6;
+  border-radius: 60px;
+  background-color: var(--main-white-color);
+  box-shadow: 0px 8px 25px 0px rgba(13, 10, 44, 0.06);
+}
+.site-footer__email-input {
+  font-weight: var(--normal);
+  font-size: 18px;
+  line-height: 20px;
+  border: none;
+}
+.site-footer__email-input::placeholder {
+  font-size: 18px;
+  color: var(--main-neutral-gray-color);
+}
+.site-footer__btn {
+  max-width: 129px;
+  width: 100%;
+  padding: 14px 26px 17px 26px;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--main-white-color);
+  border: none;
+  border-radius: 56px;
+  background-color: var(--main-blue-color);
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Register imtihon</title>
+</head>
+<body>
+  <!-- site header started -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__wrapper">
+        <a class="site-logo-link" href="./index.html">
+          <img class="site-logo" width="304" height="40" src="./images/sitelogo.svg" alt="Brix templates site logo">
+        </a>
+        <button class="site-header__register-btn" type="button">Register</button>
+      </div>
+    </div>
+  </header>
+  <!-- site header end -->
+  <!-- site main started -->
+  <main class="site-main">
+    <!-- hero section started -->
+    <section class="hero">
+      <div class="container">
+        <!-- <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="...">
+              <strong class="me-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
+          </div>
+        </div> -->
+        <div class="hero__wrapper">
+          <h1 class="visually-hidden">
+            Brix Templates
+          </h1>
+          <!-- register form started -->
+          <form class="hero__registration-form form js-registration-form" autocomplete="off">
+            <h2 class="hero__title">
+              Welcome
+            </h2>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam duis vitae curabitur amet, fermentum lorem. 
+            </p>
+            <div class="form__name-input-box">
+              <div class="name-input-wrapper">
+                <input class="form__name-input js-user-name-input" type="text" name="user_name" aria-label="Enter your name" placeholder="Your name" required>
+                <span class="form__input-name-title">
+                  First name
+                  <span class="form__input-title-sign">
+                    *
+                  </span>
+                </span>
+                <p class="form__name-input-error" data-anijs="if: mouseover, do: shake animated">
+                  Error in name!
+                </p>
+              </div>
+              <div class="lastname-input-wrapper">
+                <input class="form__last-name-input js-last-name-input" type="text" name="user_last_name" aria-label="Enter your last name" placeholder="Your last name" required>
+                <span class="form__input-last-name-title">
+                  Last name
+                  <span class="form__input-title-sign">
+                    *
+                  </span>
+                </span>
+                <p class="form__lastname-input-error" data-anijs="if: mouseover, do: shake animated">
+                  Error in last name!
+                </p>
+              </div>
+            </div>
+            <div class="form__input-wrapper">
+              <div class="email-input-wrapper">
+                <input class="form__email-input js-email-input" type="email" name="user_email" aria-label="Enter your email address" placeholder="yourmail@gmail.com" required>
+                <span class="form__email-input-title">
+                  E-mail
+                  <span class="form__input-title-sign">
+                    *
+                  </span>
+                </span>
+                <p class="form__email-input-error" data-anijs="if: mouseover, do: shake animated">
+                  The last letters of the email must end with @gmail.com!
+                </p>
+              </div>
+              <div class="password-input-wrapper">
+                <input class="form__password-input js-password-input" type="password" name="user_password" aria-label="Enter your password" placeholder="•••••••••••••" autocomplete="off" required>
+                <span class="form__password-input-title">
+                  Password
+                  <span class="form__input-title-sign">
+                    *
+                  </span>
+                </span>
+                <p class="form__password-input-error" data-anijs="if: mouseover, do: shake animated">
+                  Password must be at least 8 characters long!
+                </p>
+              </div>
+              <div class="repeat-password-input-wrapper">
+                <input class="form__repeat-password-input js-repeat-password-input" type="password" name="user_repeat_password" aria-label="Enter your repeat password" placeholder="•••••••••••••" autocomplete="off" required>
+                <span class="form__repeat-password-input-title">
+                  Repeat Password
+                  <span class="form__input-title-sign">
+                    *
+                  </span>
+                </span>
+                <p class="form__rep-password-input-error" data-anijs="if: mouseover, do: shake animated">
+                  Error repeating password! enter correctly
+                </p>
+              </div>
+              <div class="select-wrapper">
+                <select class="form__user-gender-select js-user-gender-select" name="user_gender">
+                  <option class="form__user-gender-option js-user-gender-option" value="Select your gender" hidden>Select your gender</option>
+                  <option class="form__user-gender-option js-user-gender-option" value="Male">Male</option>
+                  <option class="form__user-gender-option js-user-gender-option" value="Female">Female</option>
+                </select>
+                <span class="form__select-title">
+                  Gender *
+                </span>
+                <p class="form__gender-select-error" data-anijs="if: mouseover, do: shake animated">
+                  You didn't choose your gender!
+                </p>
+              </div>
+              <div class="date-input-wrapper">
+                <input class="form__user-birthday-input js-user-birthday-input" type="date" name="user_birthday" aria-label="Enter your birthday" placeholder="DD / MM / YYYY" required>
+                <span class="form__date-input-title">
+                  Birthday *
+                </span>
+              </div>
+            </div>
+            <div class="form__checked-input-box">
+              <input class="form__user-checkbox js-user-checkbox-input" type="checkbox" name="user_checked">
+              <p class="form__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <a class="form__desc-link" href="#">
+                  Gravida eget ultricies
+                </a>
+                pharetra scelerisque duis cursus.
+              </p>
+            </div>
+            <button class="form__registration-btn" type="submit">Enter</button>
+          </form>
+          <!-- register form end -->
+          <div class="hero__list-wrapper">
+            <div class="hero__list-titlebox">
+              <h2 class="hero__list-title">
+                Get a project quote
+              </h2>
+              <p class="hero__list-text">
+                Please fill the form below to receive a quote for your project. Feel free to add as much detail as needed.
+              </p>
+            </div>
+            <ul class="hero__list">
+              <li class="hero__item">
+                <hr class="hero__item-line">
+                <h3 class="hero__item-title">
+                  Contact details
+                </h3>
+                <p class="hero__item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisc.
+                </p>
+                <form class="hero__item-form item-form js-item-form">
+                  <div class="item-input-wrapper">
+                    <div class="item-name-inputbox">
+                      <span class="item-form__input-title">
+                        Name
+                      </span>
+                      <input class="item-form__name-input js-item-name-input" type="text" name="user_name" aria-label="Enter your name" placeholder="John Carter" required>
+                    </div>
+                    <div class="item-email-inputbox">
+                      <span class="item-form__input-title">
+                        Email
+                      </span>
+                      <input class="item-form__email-input js-item-email-input" type="email" name="user_email" aria-label="Enter your email address" placeholder="Email address" required>
+                    </div>
+                  </div>
+                  <div class="item-input-wrapper">
+                    <div class="item-phone-inputbox">
+                      <span class="item-form__input-title">
+                        Phone Number
+                      </span>
+                      <input class="item-form__phone-input js-item-phone-input" type="tel" name="user_phone" aria-label="Enter your phone number" placeholder="(123) 456 - 7890" required>
+                    </div>
+                    <div class="item-company-inputbox">
+                      <span class="item-form__input-title">
+                        Company
+                      </span>
+                      <input class="item-form__company-input js-item-company-input" type="text" name="user_company" aria-label="Enter your company name" placeholder="Company name" required>
+                    </div>
+                  </div>
+                </form>
+              </li>
+              <li class="hero__item">
+                <hr class="hero__item-line">
+                <h3 class="hero__item-title">
+                  Our services
+                </h3>
+                <p class="hero__item-desc">
+                  Please select which service you are interested in.
+                </p>
+                <form class="hero__item-services-form item-form js-item-services-form">
+                  <div class="label-box">
+                    <div class="development-box">
+                      <input class="item-form__development-input" id="Development" type="radio" name="user_choice" aria-label="Please choose one">
+                      <label class="development-label" for="Development">Development</label>
+                    </div>
+                    <div class="webdesign-box">
+                      <input class="item-form__webdesign-input" id="web-design" type="radio" name="user_choice" aria-label="Please choose one">
+                      <label class="webdesign-label" for="web-design">Web Design</label>
+                    </div>
+                  </div>
+                  <div class="label-box">
+                    <div class="marketing-box">
+                      <input class="item-form__marketing-input" id="Marketing" type="radio" name="user_choice" aria-label="Please choose one">
+                      <label class="marketing-label" for="Marketing">Marketing</label>
+                    </div>
+                    <div class="other-box">
+                      <input class="item-form__other-input" id="other" type="radio" name="user_choice" aria-label="Please choose one">
+                      <label class="other-label" for="other">Other</label>
+                    </div>
+                  </div>
+                </form>
+              </li>
+              <li class="hero__item">
+                <hr class="hero__item-line">
+                <h3 class="hero__item-title">
+                  What’s your project budget?
+                </h3>
+                <p class="hero__item-desc">
+                  Please select the project budget range you have in mind.
+                </p>
+                <form class="hero__item-budget-form item-form js-item-budget-form">
+                  <div class="label-box">
+                    <div class="development-box">
+                      <input class="item-form__first-input" id="first-budget" type="radio" name="user_budget" aria-label="Please select your budget">
+                      <label class="first-budget-label" for="first-budget">$5.000 - $10.000</label>
+                    </div>
+                    <div class="webdesign-box">
+                      <input class="item-form__second-input" id="second-budget" type="radio" name="user_budget" aria-label="Please select your budget">
+                      <label class="second-budget-label" for="second-budget">$10.000 - $20.000</label>
+                    </div>
+                  </div>
+                  <div class="label-box">
+                    <div class="marketing-box">
+                      <input class="item-form__three-input" id="three-budget" type="radio" name="user_budget" aria-label="Please select your budget">
+                      <label class="three-budget-label" for="three-budget">$20.000 - $50.000</label>
+                    </div>
+                    <div class="other-box">
+                      <input class="item-form__four-input" id="four-budget" type="radio" name="user_budget" aria-label="Please select your budget">
+                      <label class="four-budget-label" for="four-budget">$50.000 +</label>
+                    </div>
+                  </div>
+                </form>
+              </li>
+              <li class="hero__item">
+                <hr class="hero__item-line-last">
+                <img class="hero__item-checked-img" src="./images/checkedimg.svg" alt="This picture has a check mark">
+                <div class="hero__item-subtitlebox">
+                  <h3 class="hero__item-subtitle">
+                    Submit your quote request
+                  </h3>
+                  <p class="hero__item-registartion-text">
+                    Please review all the information you previously typed in the past steps, and if all is okay, submit your message to receive a project quote in 24 - 48 hours.
+                  </p>
+                </div>
+                <button class="hero__item-prewiev-btn" type="button">Prewiev</button>
+              </li>
+            </ul>
+            <div class="hero__btn-box">
+              <button class="hero__corousel-next-btn" type="button">Next step</button>
+              <button class="hero__corousel-back-btn" type="button">Previous step</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+  </main>
+  <!-- site main end -->
+  <!-- site footer started -->
+  <hr class="line">
+  <footer class="site-footer">  
+    <div class="container">
+      <div class="site-footer__wrapper">
+        <div class="site-footer__logo-box">
+          <a class="logo-link" href="./index.html">
+            <img class="site-logo" width="262" height="34" src="./images/sitelogo.svg" alt="Brix Templates site logo">
+          </a>
+          <p class="site-footer__desc">
+            Copyright © 2021 BRIX Templates | All Rights Reserved
+          </p>
+        </div>
+        <form class="site-footer__form">
+          <input class="site-footer__email-input" type="email" name="user_footer_email" aria-label="Enter your email" placeholder="Enter your email" required>
+          <button class="site-footer__btn" type="submit ">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!-- site footer end -->
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/anijs.js"></script>
+  <script src="./js/anijs-min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
